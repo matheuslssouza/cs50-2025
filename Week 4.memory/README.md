@@ -6,6 +6,8 @@
 
 In **Pixel Art**, colors are represented using the **RGB** system, which expresses the amount of **red**, **green**, and **blue** in a pixel. Each color channel can have a value between 0 and 255.
 
+<img src="../static/cs50Week4Slide015.png" alt="Pixel">
+
 ### Hexadecimal Representation
 The numerical representation for colors in RGB is `(255, 255, 255)`, but we use the **hexadecimal system** to represent colors more efficiently. The hexadecimal system uses values from **0 to 9** and **A to F**, where **F** represents 15 in decimal.
 
@@ -74,6 +76,8 @@ char *copy = malloc(strlen(original) + 1);
 strcpy(copy, original);
 ```
 To free allocated memory, use free(copy). If free is not called, the memory remains allocated, causing a memory leak.
+
+<img src="../static/cs50Week4Slide115.png" alt="Memory">
 
 ---
 
