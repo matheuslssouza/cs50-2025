@@ -1,4 +1,4 @@
-# Introduction to Computer Science - CS50
+# Week 1 - Introduction to Computer Science - CS50
 
 > Computers only understand zeros and ones — the binary system — which means two possible states.
 
