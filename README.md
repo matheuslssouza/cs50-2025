@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CS50 2025 - Harvard - Topics Summary</title>
+# CS50 2025 - Harvard - Topics Summary
 </head>
 <body>
 
