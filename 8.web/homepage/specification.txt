@@ -1,0 +1,20 @@
+header - Delimita o cabeçalho da pagina
+div - Demarca divisões na página
+main - Delimita a parte prinicipal da página
+h1 - Indica texto
+img - Representa a inserção de imagem
+p - Representa um parágrafo
+label - Label que representa o nome do input
+input - Inserção de dados em uma caixa de dialogo
+form - Criação de um formulário
+button - Botão
+footer - Delimita parte inferior da página, contendo informações de copyright
+
+background-color: colaração de fundo da página
+font_weight: peso da fonte escrita
+text-align: alinhamento do texto na página
+height: altura da seção retangular
+opacity: opacidade do parágrafo quando passa o mouse encima devido ao :hover
+
+Utilizei javascript para fazer um hello interativa com ouvidor de eventos em um botão na página inicial, emitindo um alert. Também foi utilizado para criar uma lista de forma dinamica, quando o usuario inseri um nome de musica no link de musicas, a musica é inserida na lista
+O bootstrap facilita muito a estilização dos componentes, visto que ele trabalha com componentes, utilizei em botãos, input, grid.

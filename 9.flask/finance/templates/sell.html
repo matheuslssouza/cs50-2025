@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sell
+{% endblock %}
+
+{% block main %}
+<h1>Sell your quotes in Stock</h1>
+<form id="sell-form" action="/sell" method="post">
+    <select class="form-select" aria-label="Default select example" name="company" required>
+        <option selected disabled>Company quotes</option>
+        {% for options in symbol_options %}
+        <option name="{{ options.symbol }}">{{ options.symbol }}</option>
+        {% endfor %}
+    </select>
+    <div>
+        <input type="text" class="form-control" name="shares_quotes" placeholder="Shares quotes" required>
+    </div>
+    <!-- Botão que abre o modal -->
+    <button type="button" class="btn btn-danger mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Sell
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Be careful</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Are you sure you want to sell your quotes?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">I don't want to sell</button>
+
+                    <!-- Botão que realmente envia o form -->
+                    <button type="submit" class="btn btn-primary">I want to sell</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+{% endblock %}

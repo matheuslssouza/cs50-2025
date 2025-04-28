@@ -1,0 +1,23 @@
+body {
+    font-weight: bold;
+    background-color: #f8f9fa;
+}
+
+main {
+    background-color: #c9b7e8;
+    text-align: center;
+    min-height: 500px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    height: 50px;
+    text-align: center;
+}
+
+p:hover {
+    opacity: 0.6;
+    transition: opacity 0.3s ease-in-out;
+}
+
+

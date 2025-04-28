@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+    <h1>Register</h1>
+    <form action="/register" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="username" name="username" placeholder="Username" type="text" required>
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" id="password" name="password" placeholder="Password" type="password" required>
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" id="confirmation" name="confirmation" placeholder="Confirmation Password" type="password" required>
+        </div>
+        <button class="btn btn-primary" type="submit">Register</button>
+        <div id="sucess" class="alert alert-success d-none" role="alert">
+            Password and confirmation equals :]
+          </div>
+          <div id="failed" class="alert alert-warning d-none" role="alert">
+            Password and confirmation not equals! =[
+          </div>
+    </form>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const passwordInput = document.querySelector("#password");
+            const confirmationInput = document.querySelector("#confirmation");
+
+            confirmationInput.addEventListener("input", () => {
+                const password = passwordInput.value;
+                const confirmation = confirmationInput.value;
+
+                if (password === confirmation && password !== "") {
+                    document.querySelector("#failed").classList.add("d-none");
+                    document.querySelector("#sucess").classList.remove("d-none");
+                } else {
+                    document.querySelector("#sucess").classList.add("d-none");
+                    document.querySelector("#failed").classList.remove("d-none");
+                }
+            });
+        });
+    </script>
+{% endblock %}

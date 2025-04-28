@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %} Quote {% endblock %}
+
+{% block main %}
+<h1>Buy Quotes</h1>
+    <form action="/buy" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="symbol" placeholder="Enter symbol quote" type="text" required>
+        </div>
+        <div class="mb-3">
+          <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="shares" placeholder="Enter shares" type="text" min="1" required>
+      </div>
+        <button class="btn btn-dark" type="submit" style="margin-bottom: 100px">Buy</button>
+
+    </form>
+{% endblock %}

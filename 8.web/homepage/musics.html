@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <title>My Webpage</title>
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="bg-dark py-3">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col"><a href="index.html" class="btn btn-outline-light">Home</a></div>
+                    <div class="col"><a href="hobbies.html" class="btn btn-outline-light">Hobbies</a></div>
+                    <div class="col"><a href="contact.html" class="btn btn-outline-light">Contact</a></div>
+                    <div class="col"><a href="musics.html" class="btn btn-outline-light">Musics</a></div>
+                </div>
+            </div>
+        </header>
+
+        <main class="mt-5 container p-5 rounded">
+            <h1> Musicas </h1>
+            <ul id="table-musics" class="list-group list-group-numbered">
+            </ul>
+            <div class="input-group mb-3">
+                <input type="text" class="form-music" placeholder="Adicione uma musica" aria-label="Adicione uma musica" aria-describedby="music-submit">
+                <button class="btn btn-dark" type="button" id="music-submit">Button</button>
+              </div>
+        </main>
+
+        <script src=" musics.js"></script>
+    </body>
+</html>

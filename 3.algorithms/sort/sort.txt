@@ -1,0 +1,11 @@
+sort1 uses: BUBBLE
+
+How do you know?:In the case, there could be a situation where the data is sort and the Bubble sort can detect if no swaps were made during the pass and stop the execution. Because the data already is sort.
+
+sort2 uses: MERGE
+
+How do you know?: With the increase in data, a small variation in execution time is observed.
+
+sort3 uses: SELECTION
+
+How do you know?: This is because, in this case, it would take more execution time, regardless of whether the data follows a pattern or not.

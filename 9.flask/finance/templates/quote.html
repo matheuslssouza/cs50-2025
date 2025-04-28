@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block title %} Quote {% endblock %}
+
+{% block main %}
+<h1>Quotes</h1>
+    <form action="/quote" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="symbol" placeholder="Enter symbol" type="text">
+        </div>
+        <button class="btn btn-dark" type="submit" style="margin-bottom: 100px">Search Quote</button>
+
+    </form>
+
+    <h1>Quotes Table</h1>
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Symbol</th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for qt in quotes%}
+            <tr>
+                <td>{{qt.name}}</td>
+                <td>{{qt.price}}</td>
+                <td>{{qt.symbol}}</td>
+              </tr>
+              {% endfor %}
+    </tbody>
+    </table>
+{% endblock %}

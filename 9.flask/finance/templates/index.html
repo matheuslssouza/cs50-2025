@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block title%} Home {% endblock%}
+
+{% block main %}
+<div class="card text-center shadow-sm border-0 mb-5" style="max-width: 24rem; margin: auto;">
+    <div class="card-header bg-white border-0">
+      <h5 class="mb-0">💼 Wallet Balance</h5>
+    </div>
+    <div class="card-body">
+      <h2 class="display-5 fw-bold text-success">
+        ${{ "%.2f"|format(user_cash) }}
+      </h2>
+      <p class="text-muted mb-4">Available in your account</p>
+      <a href="/buy" class="btn btn-dark btn-lg w-100">Buy Stocks</a>
+    </div>
+    <form action="/money" method="post">
+      <div class="mb-3">
+        <label class="form-label">Add money</label>
+        <input type="text" name="add-money" class="form-control">
+      </div>
+      <button class="btn btn-dark btn-lg w-100" type="submit"> Add </button>
+  </div>
+    </form>
+
+<table class="table">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">Company</th>
+        <th scope="col">Shares Owned</th>
+        <th scope="col">Total Invested</th>
+        <th scope="col">Price per quote</th>
+        <th scope="col">Market Value</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for user_info in transactions %}
+        <tr>
+        <td>{{user_info.symbol}}</td>
+        <td>{{user_info.sum_quotes}}</td>
+        <td>{{ 0 if user_info.total_invested < 0 else user_info.total_invested | round(2)}}</td>
+        <td>{{ 0 if (user_info.total_invested / (user_info.sum_quotes or 1)) < 0  else (user_info.total_invested / (user_info.sum_quotes or 1)) | round(2) }}</td>
+        <td>{{market_now[loop.index0].price_now}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+{% endblock %}

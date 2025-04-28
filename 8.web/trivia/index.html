@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded', () => {
+                document.querySelector('.buttons').addEventListener('click', (event) => {
+                    let buttonText = event.target.textContent;
+
+                    if(event.target.tagName === "BUTTON"){
+                        if (buttonText === "São Paulo") {
+                            event.target.style.backgroundColor = 'green';
+                            document.querySelector("#answer-1").innerHTML = "Correct!";
+                        }
+
+                    else{
+                            event.target.style.backgroundColor = 'red';
+                            document.querySelector("#answer-1").innerHTML = "Incorrect!";
+                        }
+                    }
+
+                    event.preventDefault();
+                })
+
+                document.querySelector("#check").addEventListener('click', () => {
+                    let answer2 = document.querySelector("#answer-2");
+                    if ( answer2.value === "Ilhabela"){
+                        answer2.style.backgroundColor = "green";
+                        document.querySelector("#question-2").innerHTML = "Correct!";
+                    }
+                    else{
+                        answer2.style.backgroundColor = "red";
+                        document.querySelector("#question-2").innerHTML = "Incorrect!";
+                    }
+
+                    event.preventDefault();
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3> Qual o centro financeiro do Brasil? </h3>
+                <h3 id="answer-1"></h3>
+                <div class="buttons">
+                    <button>Brasilia</button>
+                    <button>São Paulo</button>
+                    <button>Rio de Janeiro</button>
+                    <button>Amazonas</button>
+                    <button>Ceará</button>
+                </div>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3> Qual o nome da praia mais bonita de São Paulo? </h3>
+                <h3 id="question-2"></h3>
+                <div>
+                    <input id="answer-2"/>
+                    <button id="check">Check Answer</button>
+                 </div>
+            </div>
+        </div>
+    </body>
+</html>
