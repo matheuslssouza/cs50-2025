@@ -7,13 +7,13 @@ The files are organized by topic, making it easier to navigate and study the key
 
    | Topics:          |                               
    |------------------|
-   |<a href="#./sractch">Topic 0: Introduction to Computer Science</a>|
-   |<a href="#./Week%201.c">Topic 1: C </a>|
-   |<a href="#./Week%202.arrays">Topic 2: Arrays </a>|
-   | <a href="#./Week%203.algorithms">Topic 3: Algorithms </a> |
-   | <a href="#./Week%204.memory">Topic 4: Memory </a> |
-   | <a href="#./Week%205.data-structures">Topic 5: Data Structures </a> |
-   | <a href="#./Week%206.data-structures">Topic 6: Python </a> |
-   | <a href="#./Week%207.sql">Topic 7: SQL </a> |
-   | <a href="#./Week%208.web">Topic 8: Web (HTML/CSS/JavaScript)</a> |
-   | <a href="#./Week%209.flask">Topic 9: Flask Framework </a> |
+   |[Topic 0: Introduction to Computer Science](./sractch) |
+   |[Topic 1: C](./Week%201.c) |
+   |[Topic 2: Arrays](./Week%202.arrays) |
+   |[Topic 3: Algorithms](./Week%203.algorithms) |
+   |[Topic 4: Memory](./Week%204.memory) |
+   |[Topic 5: Data Structures](./Week%205.data-structures) |
+   |[Topic 6: Python](./Week%206.data-structures) |
+   |[Topic 7: SQL](./Week%207.sql) |
+   |[Topic 8: Web (HTML/CSS/JavaScript)](./Week%208.web) |
+   |[Topic 9: Flask Framework](./Week%209.flask) |
