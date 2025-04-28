@@ -16,3 +16,5 @@ The files are organized by topic, making it easier to navigate and study the key
    |[Topic 7: SQL](./Week%207.sql) |
    |[Topic 8: Web (HTML/CSS/JavaScript)](./Week%208.web) |
    |[Topic 9: Flask Framework](./Week%209.flask) |
+
+<img src="./static/cs50.png" alt="CS50 Duck">

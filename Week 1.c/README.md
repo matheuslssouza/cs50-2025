@@ -36,7 +36,7 @@ Example:
 
 ```text
 R: 73, G: 75, B: 33 → A shade of yellow
-
+```
 
 The Role of Software
 When we write software, we translate bits into meaningful actions:
