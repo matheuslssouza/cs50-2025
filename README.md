@@ -7,7 +7,6 @@ The files are organized by topic, making it easier to navigate and study the key
 
    | Topics:          |                               
    |------------------|
-   |[Topic 0: Introduction to Computer Science](./Week%200.scratch) |
    |[Topic 1: C](./Week%201.c) |
    |[Topic 2: Arrays](./Week%202.arrays) |
    |[Topic 3: Algorithms](./Week%203.algorithms) |
