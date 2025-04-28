@@ -45,6 +45,81 @@ Solution: Structs were introduced to store related data together more effectivel
 A **data structure** is a container for various kinds of data (custom data types).  
 It allows for **data encapsulation**, grouping related information and operations into a structured format.  
 For example, a **person** can be a data structure with attributes (like name, age) and associated functions (like `introduce()`).
+**Data structures** are ways of organizing and storing data efficiently. They can be **linear** or **non-linear**, depending on how the elements are organized and accessed.
+
+---
+
+## Linear Data Structures
+
+### 1. **Array (Vector)**
+- **Description**: Stores elements of the same type in contiguous memory positions.  
+  Ideal for **fast access** to elements by **index**.
+  
+- **Use Case**: Storing fixed lists, such as a list of students or numbers.
+
+### 2. **List**
+- **Description**: Allows for dynamic addition or removal of elements, using **nodes** that point to the next element.  
+  Ideal for situations where **insertion order** matters.
+
+- **Use Case**: Linked lists in programs that require fast insertion and removal of elements.
+
+### 3. **Stack**
+- **Description**: Uses the **LIFO (Last In, First Out)** principle. The last element inserted is the first to be removed.  
+  Ideal for **depth-first search** algorithms and function call management.
+  
+- **Use Case**: Implementing tree traversal algorithms and managing recursive function calls.
+
+### 4. **Queue**
+- **Description**: Uses the **FIFO (First In, First Out)** principle. The first element inserted is the first to be removed.  
+  Ideal for **breadth-first search** algorithms and task management in operating systems.
+  
+- **Use Case**: Implementing print queues, where the first job sent to the printer is the first to be printed.
+
+---
+
+## Non-Linear Data Structures
+
+### 1. **Tree**
+- **Description**: A **hierarchical** structure, where each element (node) can have **zero or more children**.  
+  Used for organizing data and efficient searching.
+  
+- **Use Case**: File systems, such as directories and subdirectories.
+
+### 2. **Graph**
+- **Description**: Represents a set of **vertices (or nodes)** and **edges**. Ideal for modeling **networks** and **relationships** between elements.
+  
+- **Use Case**: Modeling social networks, such as friend connections, or network routing.
+
+### 3. **Hash Table**
+- **Description**: Enables fast data retrieval using a **key**.  
+  Ideal for storing and retrieving data quickly in databases.
+
+- **Use Case**: Storing users and passwords, where the username is the key.
+
+---
+
+## Other Data Types
+
+### 1. **Set**
+- **Description**: Stores **unique, unordered** elements.
+  
+- **Use Case**: Storing tags or categories, where duplicate elements are not allowed.
+
+### 2. **Dictionary (or Map)**
+- **Description**: Stores **key-value** pairs, allowing fast access to data via the **key**.
+
+- **Use Case**: Storing configuration settings, where the keys are options and the values are configurations.
+
+### 3. **Composite (or Complex) Types**
+- **Description**: Allows storing multiple values of different types, such as **structures** and **classes**.
+
+- **Use Case**: Representing complex objects, such as a person (with name, age, address) in a system.
+
+### 4. **Primitive Types**
+- **Description**: Basic data types such as **integers**, **floats**, **characters**, **booleans**, etc.
+
+- **Use Case**: Storing simple data like age, temperature, or a process state.
+
 
 ---
 
