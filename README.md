@@ -5,8 +5,9 @@ This repository contains the code and summaries of the lessons attended in the C
 
 The files are organized by topic, making it easier to navigate and study the key computer science concepts, such as algorithms, data structures, Python programming, software engineering, and more. Access the topics to view the full code and detailed explanations of each subject.
 
-   <a href="#./sractch">Topic 1: Introduction to Computer Science</a>
-    <a href="#./c">Topic 2: C </a>
+   ###Topics: 
+   |<a href="#./sractch">Topic 1: Introduction to Computer Science</a>|
+   |<a href="#./c">Topic 2: C </a>|
     <a href="#./arrays">Topic 3: Arrays </a>
     <a href="#./algorithms">Topic 4: Algorithms </a>
     <a href="#./memory">Topic 5: Memory </a>
