@@ -21,6 +21,7 @@ To represent text, the **ASCII** pattern was created, where each number correspo
 
 For languages with more characters, **UNICODE** was developed — a standard that supports virtually all languages.
 
+<img src="../static/ascii.jpg" alt="Ascii">
 ---
 
 ## Representing Colors with Bytes
