@@ -134,6 +134,8 @@ Ao implementar essas melhores práticas, os bancos de dados SQL podem gerenciar 
 - **Hibernate com JPQL**: Reduz a necessidade de SQL manual, mas ainda permite controle razoável.
 - **Spring Data JPA**: Maior abstração, gera queries automaticamente, mas pode ser menos otimizado.
 
+- <img src="../static/bd.png" alt="Banco de dados">
+
 ## 📝 Lista de Comandos Mais Utilizados em SQL
 
 ### 🔄 Manipulação de Dados (DML - Data Manipulation Language)
